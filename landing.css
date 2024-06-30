@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("https://www.wallpapertip.com/wmimgs/9-90696_travel-hd-wallpapers-travel-world-wallpapers-world-tour.jpg");
+  padding: 5%;
+  background-size: 100%;
+}
+
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #0ee9e9;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  background-color: rgb(22, 20, 21);
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
